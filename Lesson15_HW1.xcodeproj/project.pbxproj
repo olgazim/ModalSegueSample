@@ -12,6 +12,8 @@
 		B8ECA4AB22933B2A002DDF7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8ECA4A922933B2A002DDF7B /* Main.storyboard */; };
 		B8ECA4AD22933B2B002DDF7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8ECA4AC22933B2B002DDF7B /* Assets.xcassets */; };
 		B8ECA4B022933B2B002DDF7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8ECA4AE22933B2B002DDF7B /* LaunchScreen.storyboard */; };
+		B8ECA4BD22933C37002DDF7B /* PresenteeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ECA4BC22933C37002DDF7B /* PresenteeViewController.swift */; };
+		B8ECA4BF229351BE002DDF7B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ECA4BE229351BE002DDF7B /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B8ECA4AC22933B2B002DDF7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8ECA4AF22933B2B002DDF7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8ECA4B122933B2B002DDF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8ECA4BC22933C37002DDF7B /* PresenteeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenteeViewController.swift; sourceTree = "<group>"; };
+		B8ECA4BE229351BE002DDF7B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,56 @@
 		B8ECA4A422933B2A002DDF7B /* Lesson15_HW1 */ = {
 			isa = PBXGroup;
 			children = (
-				B8ECA4A522933B2A002DDF7B /* AppDelegate.swift */,
-				B8ECA4A722933B2A002DDF7B /* ViewController.swift */,
+				B8ECA4B922933B46002DDF7B /* Extension */,
+				B8ECA4B822933B3D002DDF7B /* Modals */,
+				B8ECA4B722933B35002DDF7B /* SupportingFiles */,
 				B8ECA4A922933B2A002DDF7B /* Main.storyboard */,
+			);
+			path = Lesson15_HW1;
+			sourceTree = "<group>";
+		};
+		B8ECA4B722933B35002DDF7B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B8ECA4A522933B2A002DDF7B /* AppDelegate.swift */,
 				B8ECA4AC22933B2B002DDF7B /* Assets.xcassets */,
 				B8ECA4AE22933B2B002DDF7B /* LaunchScreen.storyboard */,
 				B8ECA4B122933B2B002DDF7B /* Info.plist */,
 			);
-			path = Lesson15_HW1;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B8ECA4B822933B3D002DDF7B /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				B8ECA4BB22933B53002DDF7B /* Presentee */,
+				B8ECA4BA22933B4F002DDF7B /* Launch */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		B8ECA4B922933B46002DDF7B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B8ECA4BE229351BE002DDF7B /* File.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B8ECA4BA22933B4F002DDF7B /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				B8ECA4A722933B2A002DDF7B /* ViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		B8ECA4BB22933B53002DDF7B /* Presentee */ = {
+			isa = PBXGroup;
+			children = (
+				B8ECA4BC22933C37002DDF7B /* PresenteeViewController.swift */,
+			);
+			path = Presentee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8ECA4A822933B2A002DDF7B /* ViewController.swift in Sources */,
+				B8ECA4BF229351BE002DDF7B /* File.swift in Sources */,
 				B8ECA4A622933B2A002DDF7B /* AppDelegate.swift in Sources */,
+				B8ECA4BD22933C37002DDF7B /* PresenteeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9V3HNK9U9;
-				INFOPLIST_FILE = Lesson15_HW1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Lesson15_HW1/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P9V3HNK9U9;
-				INFOPLIST_FILE = Lesson15_HW1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Lesson15_HW1/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
